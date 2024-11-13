@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Table Layout</title>
+    <link rel="stylesheet" href="table-mobile-style.css">
+</head>
+<body>
+    <table class="main-table">
+        <tr>
+            <td colspan="2" class="table-item item1">
+                <table class="menu-table">
+                    <tr>
+                        <td class="menu-container">
+                            <nav class="menu">
+                                <a href="index.html">Про нас</a>
+                                <a href="flex.html">Популярні напрямки</a>
+                                <a href="#">Забронювати путівку</a>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="x-block-container">
+                            <h2 class="x-block">Your Next Adventure Awaits!</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="table-item item4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies egestas neque volutpat volutpat. Integer dui leo,
+                    mattis quis porttitor et, lobortis sed odio. Proin non placerat libero.
+                    Proin sagittis mauris maximus erat ultrices semper. Nulla orci ex, cursus sed sem non,
+                    pretium faucibus felis. Nullam laoreet egestas condimentum. Aenean ultrices nibh non mi iaculis,
+                    eu mattis leo imperdiet. Nam non blandit nulla.
+                    Pellentesque ac ex sagittis leo ultricies pellentesque et non mauris.
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="table-item item3">
+                <img src="https://cdn.thestandard.co.zw/images/thestandard/uploads/2023/01/LmSaHCbMy2hM3HxI7FE2AXuFOUxCMdWclLt7G08u.png" alt="image">
+            </td>
+        </tr>
+
+        <tr class="split-container">
+            <td colspan="1" class="table-item item2">
+                <ul>
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                </ul>
+            </td>
+            <td colspan="1" class="table-item item5">
+                <img src="https://cdn.britannica.com/18/194818-004-AFEBAA3D/view-Kiev-Ukraine.jpg" alt="photo">
+            </td>
+        </tr>
+
+        <tr class="page-footer">
+            <td class="table-item item6" colspan="2">
+                <table>
+                    <tr>
+                        <td class="footer-holder">
+                            <h3 class="y-block">Stay connected with us!</h3>
+                        </td>
+                        <td class="icons footer-holder">
+                            <a href="https://www.instagram.com/"><img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="instagram"></a>
+                            <a href="https://www.telegram.com/"><img src="https://static.vecteezy.com/system/resources/previews/031/737/167/non_2x/telegram-icon-telegram-social-media-logo-free-png.png" alt="telegram"></a>
+                            <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="facebook"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function redirectToAppropriateVersion() {
+        const isMobilePage = window.location.href.includes('table-mobile.html');
+        const isDesktopPage = window.location.href.includes('table.html');
+
+        if (window.innerWidth <= 1024 && !isMobilePage) {
+            window.location.href = 'table-mobile.html';
+        } else if (window.innerWidth > 1024 && !isDesktopPage) {
+            window.location.href = 'table.html';
+        }
+    }
+    window.onload = redirectToAppropriateVersion;
+    window.addEventListener('resize', redirectToAppropriateVersion);
+</script>
+
+</html>

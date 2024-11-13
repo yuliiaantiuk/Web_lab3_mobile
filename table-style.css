@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main-table{
+    width: 100%;
+    min-height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.item1{
+    background-color: #b5cdea;
+    height: 25%;
+    padding: 2%;
+}
+
+.menu-container{
+    border: none;
+}
+
+.menu{
+    border: none;
+    padding: 0;
+}
+
+nav{
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.x-block-container{
+    border: none;
+    text-align: right;
+}
+
+.x-block{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.item2{
+    height: 30vh;
+}
+
+.item2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item3{
+    padding: 0;
+    height: 60vh;
+}
+
+.item3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.item4{
+    padding: 2%;
+}
+
+.item5{
+    height: 30vh;
+}
+
+.item5 ol{
+    padding-left: 10px;
+    list-style-position: inside;
+    font-size: 24px;
+}
+
+.item6{
+    background-color: #b5cdea;
+    font-size: 18px;
+    height: 20vh;
+}
+
+.item6-table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.y-block{
+    padding-left: 100px;
+}
+
+.icons{
+    padding-left: 300px;
+}
+
+.icons a img{
+    width: 40px;
+    height: 40px;
+}
